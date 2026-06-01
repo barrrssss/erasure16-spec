@@ -1,0 +1,629 @@
+{
+  "manifestVersion": 1,
+  "description": "erasure16 conformance vectors (GF(2^16) Cauchy Reed-Solomon). Data shard bytes are produced by a documented SplitMix64 PRNG; see Erasure16.VectorGen. Every implementation must reproduce these byte-for-byte.",
+  "field": [
+    {
+      "name": "field-basic",
+      "reductionPolynomial": 69643,
+      "generator": 2,
+      "mul": [
+        {
+          "a": 1,
+          "b": 1,
+          "product": 1
+        },
+        {
+          "a": 1,
+          "b": 65535,
+          "product": 65535
+        },
+        {
+          "a": 2,
+          "b": 2,
+          "product": 4
+        },
+        {
+          "a": 2,
+          "b": 3,
+          "product": 6
+        },
+        {
+          "a": 32768,
+          "b": 2,
+          "product": 4107
+        },
+        {
+          "a": 4660,
+          "b": 22136,
+          "product": 25380
+        },
+        {
+          "a": 43981,
+          "b": 65535,
+          "product": 62198
+        },
+        {
+          "a": 65535,
+          "b": 65535,
+          "product": 1843
+        },
+        {
+          "a": 0,
+          "b": 4660,
+          "product": 0
+        }
+      ],
+      "inv": [
+        {
+          "a": 1,
+          "inv": 1
+        },
+        {
+          "a": 2,
+          "inv": 34821
+        },
+        {
+          "a": 3,
+          "inv": 61446
+        },
+        {
+          "a": 256,
+          "inv": 40565
+        },
+        {
+          "a": 32768,
+          "inv": 13405
+        },
+        {
+          "a": 43981,
+          "inv": 3602
+        },
+        {
+          "a": 65534,
+          "inv": 1711
+        },
+        {
+          "a": 65535,
+          "inv": 2196
+        }
+      ]
+    }
+  ],
+  "encode": [
+    {
+      "name": "enc-k4-r2-len8",
+      "k": 4,
+      "r": 2,
+      "shardLen": 8,
+      "dataShards": [
+        "enc-k4-r2-len8-data-00.bin",
+        "enc-k4-r2-len8-data-01.bin",
+        "enc-k4-r2-len8-data-02.bin",
+        "enc-k4-r2-len8-data-03.bin"
+      ],
+      "parityShards": [
+        "enc-k4-r2-len8-parity-00.bin",
+        "enc-k4-r2-len8-parity-01.bin"
+      ]
+    },
+    {
+      "name": "enc-k2-r3-len16",
+      "k": 2,
+      "r": 3,
+      "shardLen": 16,
+      "dataShards": [
+        "enc-k2-r3-len16-data-00.bin",
+        "enc-k2-r3-len16-data-01.bin"
+      ],
+      "parityShards": [
+        "enc-k2-r3-len16-parity-00.bin",
+        "enc-k2-r3-len16-parity-01.bin",
+        "enc-k2-r3-len16-parity-02.bin"
+      ]
+    },
+    {
+      "name": "enc-k1-r1-len32",
+      "k": 1,
+      "r": 1,
+      "shardLen": 32,
+      "dataShards": [
+        "enc-k1-r1-len32-data-00.bin"
+      ],
+      "parityShards": [
+        "enc-k1-r1-len32-parity-00.bin"
+      ]
+    },
+    {
+      "name": "enc-k32-r8-len64",
+      "k": 32,
+      "r": 8,
+      "shardLen": 64,
+      "dataShards": [
+        "enc-k32-r8-len64-data-00.bin",
+        "enc-k32-r8-len64-data-01.bin",
+        "enc-k32-r8-len64-data-02.bin",
+        "enc-k32-r8-len64-data-03.bin",
+        "enc-k32-r8-len64-data-04.bin",
+        "enc-k32-r8-len64-data-05.bin",
+        "enc-k32-r8-len64-data-06.bin",
+        "enc-k32-r8-len64-data-07.bin",
+        "enc-k32-r8-len64-data-08.bin",
+        "enc-k32-r8-len64-data-09.bin",
+        "enc-k32-r8-len64-data-10.bin",
+        "enc-k32-r8-len64-data-11.bin",
+        "enc-k32-r8-len64-data-12.bin",
+        "enc-k32-r8-len64-data-13.bin",
+        "enc-k32-r8-len64-data-14.bin",
+        "enc-k32-r8-len64-data-15.bin",
+        "enc-k32-r8-len64-data-16.bin",
+        "enc-k32-r8-len64-data-17.bin",
+        "enc-k32-r8-len64-data-18.bin",
+        "enc-k32-r8-len64-data-19.bin",
+        "enc-k32-r8-len64-data-20.bin",
+        "enc-k32-r8-len64-data-21.bin",
+        "enc-k32-r8-len64-data-22.bin",
+        "enc-k32-r8-len64-data-23.bin",
+        "enc-k32-r8-len64-data-24.bin",
+        "enc-k32-r8-len64-data-25.bin",
+        "enc-k32-r8-len64-data-26.bin",
+        "enc-k32-r8-len64-data-27.bin",
+        "enc-k32-r8-len64-data-28.bin",
+        "enc-k32-r8-len64-data-29.bin",
+        "enc-k32-r8-len64-data-30.bin",
+        "enc-k32-r8-len64-data-31.bin"
+      ],
+      "parityShards": [
+        "enc-k32-r8-len64-parity-00.bin",
+        "enc-k32-r8-len64-parity-01.bin",
+        "enc-k32-r8-len64-parity-02.bin",
+        "enc-k32-r8-len64-parity-03.bin",
+        "enc-k32-r8-len64-parity-04.bin",
+        "enc-k32-r8-len64-parity-05.bin",
+        "enc-k32-r8-len64-parity-06.bin",
+        "enc-k32-r8-len64-parity-07.bin"
+      ]
+    },
+    {
+      "name": "enc-k3-r0-len24",
+      "k": 3,
+      "r": 0,
+      "shardLen": 24,
+      "dataShards": [
+        "enc-k3-r0-len24-data-00.bin",
+        "enc-k3-r0-len24-data-01.bin",
+        "enc-k3-r0-len24-data-02.bin"
+      ],
+      "parityShards": []
+    }
+  ],
+  "reconstruct": [
+    {
+      "name": "enc-k4-r2-len8-recon",
+      "k": 4,
+      "r": 2,
+      "shardLen": 8,
+      "present": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "expectedShards": [
+        "enc-k4-r2-len8-data-00.bin",
+        "enc-k4-r2-len8-data-01.bin",
+        "enc-k4-r2-len8-data-02.bin",
+        "enc-k4-r2-len8-data-03.bin",
+        "enc-k4-r2-len8-parity-00.bin",
+        "enc-k4-r2-len8-parity-01.bin"
+      ]
+    },
+    {
+      "name": "enc-k2-r3-len16-recon",
+      "k": 2,
+      "r": 3,
+      "shardLen": 16,
+      "present": [
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "expectedShards": [
+        "enc-k2-r3-len16-data-00.bin",
+        "enc-k2-r3-len16-data-01.bin",
+        "enc-k2-r3-len16-parity-00.bin",
+        "enc-k2-r3-len16-parity-01.bin",
+        "enc-k2-r3-len16-parity-02.bin"
+      ]
+    },
+    {
+      "name": "enc-k1-r1-len32-recon",
+      "k": 1,
+      "r": 1,
+      "shardLen": 32,
+      "present": [
+        false,
+        true
+      ],
+      "expectedShards": [
+        "enc-k1-r1-len32-data-00.bin",
+        "enc-k1-r1-len32-parity-00.bin"
+      ]
+    },
+    {
+      "name": "enc-k32-r8-len64-recon",
+      "k": 32,
+      "r": 8,
+      "shardLen": 64,
+      "present": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false
+      ],
+      "expectedShards": [
+        "enc-k32-r8-len64-data-00.bin",
+        "enc-k32-r8-len64-data-01.bin",
+        "enc-k32-r8-len64-data-02.bin",
+        "enc-k32-r8-len64-data-03.bin",
+        "enc-k32-r8-len64-data-04.bin",
+        "enc-k32-r8-len64-data-05.bin",
+        "enc-k32-r8-len64-data-06.bin",
+        "enc-k32-r8-len64-data-07.bin",
+        "enc-k32-r8-len64-data-08.bin",
+        "enc-k32-r8-len64-data-09.bin",
+        "enc-k32-r8-len64-data-10.bin",
+        "enc-k32-r8-len64-data-11.bin",
+        "enc-k32-r8-len64-data-12.bin",
+        "enc-k32-r8-len64-data-13.bin",
+        "enc-k32-r8-len64-data-14.bin",
+        "enc-k32-r8-len64-data-15.bin",
+        "enc-k32-r8-len64-data-16.bin",
+        "enc-k32-r8-len64-data-17.bin",
+        "enc-k32-r8-len64-data-18.bin",
+        "enc-k32-r8-len64-data-19.bin",
+        "enc-k32-r8-len64-data-20.bin",
+        "enc-k32-r8-len64-data-21.bin",
+        "enc-k32-r8-len64-data-22.bin",
+        "enc-k32-r8-len64-data-23.bin",
+        "enc-k32-r8-len64-data-24.bin",
+        "enc-k32-r8-len64-data-25.bin",
+        "enc-k32-r8-len64-data-26.bin",
+        "enc-k32-r8-len64-data-27.bin",
+        "enc-k32-r8-len64-data-28.bin",
+        "enc-k32-r8-len64-data-29.bin",
+        "enc-k32-r8-len64-data-30.bin",
+        "enc-k32-r8-len64-data-31.bin",
+        "enc-k32-r8-len64-parity-00.bin",
+        "enc-k32-r8-len64-parity-01.bin",
+        "enc-k32-r8-len64-parity-02.bin",
+        "enc-k32-r8-len64-parity-03.bin",
+        "enc-k32-r8-len64-parity-04.bin",
+        "enc-k32-r8-len64-parity-05.bin",
+        "enc-k32-r8-len64-parity-06.bin",
+        "enc-k32-r8-len64-parity-07.bin"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "enc-k1-r1-len32-data-00.bin",
+      "length": 32,
+      "sha256": "009274b59ce93fba8290d36932e8910918447381d543f8103bc0daeee499869f"
+    },
+    {
+      "path": "enc-k1-r1-len32-parity-00.bin",
+      "length": 32,
+      "sha256": "009274b59ce93fba8290d36932e8910918447381d543f8103bc0daeee499869f"
+    },
+    {
+      "path": "enc-k2-r3-len16-data-00.bin",
+      "length": 16,
+      "sha256": "cd593688ea52489e310e2c453ea230996a915e194817008e665b3e71fe7c68bc"
+    },
+    {
+      "path": "enc-k2-r3-len16-data-01.bin",
+      "length": 16,
+      "sha256": "d1f92aebc7a14488b5b5ed424d19172cb84b5e700059b7370c700bc46a56581e"
+    },
+    {
+      "path": "enc-k2-r3-len16-parity-00.bin",
+      "length": 16,
+      "sha256": "4f41dd8ab25887d488fd1fed7edda7c3449cd85770b401ba50f65b9dbab1c061"
+    },
+    {
+      "path": "enc-k2-r3-len16-parity-01.bin",
+      "length": 16,
+      "sha256": "de6bdf3ee4d64d00d84cf94f0b8511935800cb1611d474bef3100a554ba0a07c"
+    },
+    {
+      "path": "enc-k2-r3-len16-parity-02.bin",
+      "length": 16,
+      "sha256": "9a9de662107098a24a4c154741ea0841bb2e4d9e92082b52968ecafcf912fe38"
+    },
+    {
+      "path": "enc-k3-r0-len24-data-00.bin",
+      "length": 24,
+      "sha256": "0bc974a560b1429eecc1976708b9933e3fb379a6de68ab9f4709c5a7d204579d"
+    },
+    {
+      "path": "enc-k3-r0-len24-data-01.bin",
+      "length": 24,
+      "sha256": "536eb444701250fe05f81ce796f75eeeb75a292d64707082648fb8f86a5f9fb7"
+    },
+    {
+      "path": "enc-k3-r0-len24-data-02.bin",
+      "length": 24,
+      "sha256": "990a3aa74182dc04e979c0b7afc1bfdb61f24649a618e44fef4759152b3099fe"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-00.bin",
+      "length": 64,
+      "sha256": "fa42c921893aaa0dd00cd25920aabb5d3e7ad964a8253f16924b4a90d74ac712"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-01.bin",
+      "length": 64,
+      "sha256": "a55cbeb217d070ce08ed1cdf1552ac679231c9ba0a3574d724e0728503920b6f"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-02.bin",
+      "length": 64,
+      "sha256": "4ef4fbaf80ece74bf32095611b697e355607572b7e66c121a06cc77ed0a3e1f0"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-03.bin",
+      "length": 64,
+      "sha256": "86b94ef82c6053e0ae06245c9ee63d75b75448d6d562e6e63c2987a70ac7ec9e"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-04.bin",
+      "length": 64,
+      "sha256": "24af67892a4b0adc84903ad2079517e9a1a51aef8af613ba5198708b82c5a3ff"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-05.bin",
+      "length": 64,
+      "sha256": "1495e7957261c5db21ac565c0db99ba925eb744ca865338f4d02fdc8bc1fb427"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-06.bin",
+      "length": 64,
+      "sha256": "3f3a217431ee79802533cbf03006cc808e2ddee29f006dc6ae2d109a4b01689a"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-07.bin",
+      "length": 64,
+      "sha256": "435ce566f05024038dbb2bcd0959f281835b82b297520210667b494fb0d632b5"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-08.bin",
+      "length": 64,
+      "sha256": "571707087dff05ad411c18dede72641b63f6771deb514bf20a41761ff942ff94"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-09.bin",
+      "length": 64,
+      "sha256": "71fa3455357539c5c0a18c5331efe8cdf92a66e5d6c82a1070ff25a3680b548c"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-10.bin",
+      "length": 64,
+      "sha256": "cb43c10e2bcd428cd71f0f54edf1302ecc23f01f141aa35fdfdd5a1e59ca0c3f"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-11.bin",
+      "length": 64,
+      "sha256": "abaaad4029c3f28cbb4183b07a017b16b1fb29d22911a22039163e7bc14dcda1"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-12.bin",
+      "length": 64,
+      "sha256": "054e5568d9f0d060c958564b3a0a8b83696a7693d87727e4b2594ca71d0f2f37"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-13.bin",
+      "length": 64,
+      "sha256": "02e672c5def19600635372c8e105f20dec37f62ec2c86be6eedd4517a7796ecd"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-14.bin",
+      "length": 64,
+      "sha256": "0391facc933d76cf8f8469c66cb4749b3085e2f0c103a55ccc682e6d756bc67d"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-15.bin",
+      "length": 64,
+      "sha256": "cbb7f485f285fc4fc4cf89e0a8ec3975b9e473d82e74d4b0f3732e4fb4b2a80a"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-16.bin",
+      "length": 64,
+      "sha256": "f119218cc5c6aeccbcb0c27138ad8e6b44c1bd783b26f07e91c7dea34b86aa47"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-17.bin",
+      "length": 64,
+      "sha256": "78a82a5270f4ff4e826b5d74605b1047d19f6b2e89e45ee6b890661c5fa1a414"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-18.bin",
+      "length": 64,
+      "sha256": "17c042c1c9b65137b1eb968597b8957b06e9ba91df7b6be20e92fbaad908fcb2"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-19.bin",
+      "length": 64,
+      "sha256": "ca9f6a7ac2f31f96d5fb4b3a1a421c4f65c0fa0ba27f5929ca87e71ec7a0efc9"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-20.bin",
+      "length": 64,
+      "sha256": "f7f740823aef472a130568f599d7bc89d98e187d0097bf77a1d2b81e0cf32f90"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-21.bin",
+      "length": 64,
+      "sha256": "478bdc44cbd81ac06c511c7b5e7e3468c5e852031e21d0bfb8b24f7250a8ccd8"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-22.bin",
+      "length": 64,
+      "sha256": "4b28689edb6983c550626b89a2db68fc462fb640fec9e136204d19cdcc5006b3"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-23.bin",
+      "length": 64,
+      "sha256": "bd944efb9c15405d0bb3f493ee07346dbdfd4253f43075de447bcd2b4d50f312"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-24.bin",
+      "length": 64,
+      "sha256": "1e425fc55c2576746d2470d41df1d2b3c20904b0afa7e23a5a600348cf15c470"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-25.bin",
+      "length": 64,
+      "sha256": "8aa4963ea212bd003f15505bf4a1467091efe311f4d7773b21aeddaea76bc682"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-26.bin",
+      "length": 64,
+      "sha256": "bf2344600955fa4cc546e4df7fbdab04396f37426a5d68134821ee73b2cc50f7"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-27.bin",
+      "length": 64,
+      "sha256": "87accf489606bcacd25cd3c3f83efaf6d2b5aef763519b2b71d025b23ebe72f7"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-28.bin",
+      "length": 64,
+      "sha256": "44ff4edee7bdb8c15b36febd4ea90ee1390892dd3db46070cb830c49168f2b67"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-29.bin",
+      "length": 64,
+      "sha256": "fbdb3fc73ececda3aaf91099e1d1e9c78dc6cd9b0ae27119fe2ddc680388a892"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-30.bin",
+      "length": 64,
+      "sha256": "2bcb275316c047974962e9bf4c29d173889839f921d024d45ecad3b24af5d287"
+    },
+    {
+      "path": "enc-k32-r8-len64-data-31.bin",
+      "length": 64,
+      "sha256": "2c9b0fe118391487d9c7be832dd3d2584ce604c62e84406d994533821975778f"
+    },
+    {
+      "path": "enc-k32-r8-len64-parity-00.bin",
+      "length": 64,
+      "sha256": "f8920516f236fbe7aa9198af6ed838b9b32fb063a16da56085a96f6ef2f04053"
+    },
+    {
+      "path": "enc-k32-r8-len64-parity-01.bin",
+      "length": 64,
+      "sha256": "2c4ae9d51c09d7c627d63fe6e519c66719dc4a24ec593ee3c52d9761087e540f"
+    },
+    {
+      "path": "enc-k32-r8-len64-parity-02.bin",
+      "length": 64,
+      "sha256": "9a59d56df9452aaa3f48f6a32472cf52556c900a85cf02d1cbf735d366c1dcd1"
+    },
+    {
+      "path": "enc-k32-r8-len64-parity-03.bin",
+      "length": 64,
+      "sha256": "ef3f0df7d5053415512e634b03ab5c574ae4fe4700ecf3af9f669292f935061c"
+    },
+    {
+      "path": "enc-k32-r8-len64-parity-04.bin",
+      "length": 64,
+      "sha256": "85a8181dad0576512ddd57a7e46b3a7a0c89d8a9bdabffdd204bf478c729f836"
+    },
+    {
+      "path": "enc-k32-r8-len64-parity-05.bin",
+      "length": 64,
+      "sha256": "215746ce70f93c26044a557763ffcc6b0fbc9738dd1ed9222aa6c3e61c3b94d3"
+    },
+    {
+      "path": "enc-k32-r8-len64-parity-06.bin",
+      "length": 64,
+      "sha256": "5af6be864b10d109b150ace9414d6c42f3296d5b8cedd610a210ce85ae98f253"
+    },
+    {
+      "path": "enc-k32-r8-len64-parity-07.bin",
+      "length": 64,
+      "sha256": "c4762962e5a4643291f47c432e1a32c577806af24503c08b1a11ec37413646f9"
+    },
+    {
+      "path": "enc-k4-r2-len8-data-00.bin",
+      "length": 8,
+      "sha256": "bf22edf3b889b13d3a6866fb541942099a7ea203f77695be76f0a3d37b99df3d"
+    },
+    {
+      "path": "enc-k4-r2-len8-data-01.bin",
+      "length": 8,
+      "sha256": "62ea5be33893d6173c83d1cef22dd3b8db3a779327777e03972bda3cf07e3f75"
+    },
+    {
+      "path": "enc-k4-r2-len8-data-02.bin",
+      "length": 8,
+      "sha256": "7b0cc81243e66a3a2c9d8978d063195b799c5cbda2d26df3add8bc4bcefe413e"
+    },
+    {
+      "path": "enc-k4-r2-len8-data-03.bin",
+      "length": 8,
+      "sha256": "b68b607700d7d129404c496323295a282365124affcb582fb246730dcb0c450f"
+    },
+    {
+      "path": "enc-k4-r2-len8-parity-00.bin",
+      "length": 8,
+      "sha256": "69ded3777831e4df82d473de6eacefe1be47c7e5cec9f4684c41a1c6e784c59e"
+    },
+    {
+      "path": "enc-k4-r2-len8-parity-01.bin",
+      "length": 8,
+      "sha256": "441f2a4f62844f670fe9117ac2e40408e710f83c61ce2ec05760454ef423159b"
+    }
+  ]
+}
